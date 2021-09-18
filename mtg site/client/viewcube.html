@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <title>Hexahedron - Login</title>
+
+    <!-- Bootstrap css -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font awesome css -->
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div>
+
+        <div class="header-dark">
+
+            <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
+
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img style="height: 38px;" src="assets/logo.png">
+                    </a>
+                    <!-- <a class="btn btn-light action-button" role="button" href="/logout">Log out</a> -->
+                </div>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!-- Main -->
+
+    <div id="menu">
+        <div class="container pb-4">
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+
+                            <!-- Breadcrumb -->
+
+                            <ol class="breadcrumb p-0" style="background-color: transparent">
+
+                                <li class="breadcrumb-item"><a href="/user">User</a></li>
+                                <li class="breadcrumb-item"><a href="/cube">My cubes</a></li>
+                                <li id="current-page" class="breadcrumb-item active" aria-current="page"></li>
+
+                            </ol>
+
+                            <div class="col-12">
+
+                                <div class="form-group">
+
+                                    <div class="card" style="height: 500px;">
+                                        <div class="card-header">
+
+                                            <div class="row">
+
+                                                <div class="col m-auto">
+
+                                                    <a style=" text-decoration: none; color:#212529" id="cube">
+                                                        <h1>My cube</h1>
+                                                    </a>
+
+                                                </div>
+                                                <div class="col m-auto">
+                                                    <!-- 
+                                                    <input id="cube-search" placeholder="search" type="text"
+                                                        class="form-control" aria-label="Search"> -->
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div id="cube-cards" style="overflow: auto;" class="card-body">
+
+                                        </div>
+
+                                    </div>
+
+                                    <br>
+
+                                    <div class="card" style="height: 500px;">
+                                        <div class="card-header">
+
+                                            <div class="row">
+
+                                                <div class="col m-auto">
+
+                                                    <h1 id="counter">Cards</h1>
+
+                                                </div>
+                                                <div class="col m-auto">
+
+                                                    <input id="all-search" placeholder="search" type="text"
+                                                        class="form-control" aria-label="Search">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div id="all-cards" style="overflow: auto;" class="card-body">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap js -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main lib js -->
+
+    <script src="js/modular.js"></script>
+
+    <!-- Page scripts -->
+
+    <script src="js/viewcube.js"></script>
+
+</body>
+
+</html>

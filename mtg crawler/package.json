@@ -1,0 +1,19 @@
+{
+  "name": "magic-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "easyimage": "^3.1.1",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "jsdom": "^17.0.0",
+    "mongodb": "^4.1.1",
+    "request": "^2.88.2"
+  }
+}

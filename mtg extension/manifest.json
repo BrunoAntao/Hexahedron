@@ -1,0 +1,29 @@
+{
+    "name": "Save mtg cards from gatherer",
+    "version": "3.0",
+    "description": "Ez gatherer save",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://gatherer.wizards.com/Pages/Card/Details.aspx*"
+            ],
+            "js": [
+                "page.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_title": "Some tooltip",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "https://*/"
+    ]
+}
