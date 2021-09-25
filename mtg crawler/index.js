@@ -262,7 +262,11 @@ MongoClient.connect(DBurl, function (err, db) {
 
         result.forEach(card => {
 
-            loadCard(card, result.length);
+            if(!card.loaded) {
+
+                loadCard(card, result.length);
+
+            }
 
         })
 

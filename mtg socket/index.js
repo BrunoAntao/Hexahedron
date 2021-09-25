@@ -31,7 +31,7 @@ io.on('connection', (socket) => {
 
     });
 
-    console.log('user ' + socket.id + ' connected');
+    console.log('connected ' + socket.id);
 
     socket.on('join', (data) => {
 
@@ -66,7 +66,7 @@ io.on('connection', (socket) => {
 
     socket.on('disconnect', () => {
 
-        console.log('user ' + socket.id + ' disconnected');
+        console.log('disconnected ' + socket.id);
 
     });
 

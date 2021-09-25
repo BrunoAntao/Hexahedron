@@ -63,7 +63,7 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
         new HTTPRequest({
 
             method: msg.method,
-            path: 'https://webdevtools.duckdns.org/' + msg.path,
+            path: 'https://web.webdevtools.duckdns.org/' + msg.path,
             ctype: 'application/json',
             body: msg.body
 

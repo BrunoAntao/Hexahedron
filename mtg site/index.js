@@ -102,9 +102,19 @@ require('./routes/extension.js')(__dirname, app);
 
 // });
 
-const http = require('http');
+const https = require('https');
+const fs = require('fs');
 
-let server = http.createServer(app).listen(8001, () => {
+let server = https.createServer({
+
+    key: fs.readFileSync('C:/Certbot/live/web.webdevtools.duckdns.org/privkey.pem'),
+    cert: fs.readFileSync('C:/Certbot/live/web.webdevtools.duckdns.org/cert.pem'),
+    ca: [
+        fs.readFileSync('C:/Certbot/live/web.webdevtools.duckdns.org/chain.pem'),
+        fs.readFileSync('C:/Certbot/live/web.webdevtools.duckdns.org/fullchain.pem')
+    ]
+
+}, app).listen(8001, () => {
 
     console.log('HTTP server started on port 8001');
 

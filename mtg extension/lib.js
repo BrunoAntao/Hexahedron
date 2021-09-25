@@ -31,11 +31,13 @@ chrome.runtime.sendMessage({
 
     } else if (response.result.data.logged) {
 
-        chrome.storage.local.get('view', (data) => {
+        changeView('logged');
 
-            changeView(data.view);
+        // chrome.storage.local.get('view', (data) => {
 
-        });
+        //     changeView(data.view);
+
+        // });
 
     }
 

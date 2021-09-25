@@ -33,7 +33,7 @@ let proxy = require('redbird')({
 
 // });
 
-proxy.register("web.webdevtools.duckdns.org", "localhost:8001", {
+proxy.register("web.webdevtools.duckdns.org", "https://localhost:8001", {
 
     ssl: {
 

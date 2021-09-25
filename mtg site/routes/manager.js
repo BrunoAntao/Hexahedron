@@ -96,8 +96,6 @@ module.exports = (__dirname, app, instances) => {
 
         let { username, password } = req.body;
 
-        console.log(req.session.id);
-
         MongoClient.connect(url, function (err, db) {
 
             if (err) throw err;
@@ -116,7 +114,7 @@ module.exports = (__dirname, app, instances) => {
 
                             req.session.uid = result._id;
 
-                            res.status(301);
+                            res.status(307);
 
                             res.json({
 
@@ -126,7 +124,7 @@ module.exports = (__dirname, app, instances) => {
 
                         } else {
 
-                            res.status(301);
+                            res.status(307);
 
                             res.json({
 
@@ -140,7 +138,7 @@ module.exports = (__dirname, app, instances) => {
 
                 } else {
 
-                    res.status(301);
+                    res.status(307);
 
                     res.json({
 

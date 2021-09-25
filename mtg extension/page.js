@@ -142,6 +142,8 @@ chrome.runtime.sendMessage({
 
 }, (response) => {
 
+    console.log(response);
+
     if (response.result.data.exists) {
 
         showFlag();
